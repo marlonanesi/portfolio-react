@@ -22,8 +22,8 @@ class App extends Component {
                         <div>
                             <p>Olá, meu nome é Marlon!</p>
                             <Title />
-                            <p>Eu moro em Blumenau, sou Analista Desenvolvedor na empresa LINX S.A.</p>
-                            <p>Este é o meu primeiro app de exemplo para o treinamento de react!</p>
+                            <p>Eu moro em Blumenau, sou Analista Desenvolvedor Python há 5 anos na empresa LINX S.A.</p>
+                            <p>Este é o meu primeiro app fazendo parte do treinamento de react JS!</p>
                             <button onClick={this.toggleDisplayBio}>Ver menos</button>
                         </div>
                     ) : (
@@ -31,6 +31,7 @@ class App extends Component {
                             <button onClick={this.toggleDisplayBio}>Ver mais</button>
                         </div>
                     )
+                
                 }
                 <hr />
                 <Projects />
