@@ -17,7 +17,7 @@ class Joke extends Component {
         return (
                 <div>
                     <Header />
-                    <h2>Vai uma piada aí?</h2>
+                    <h2>Vai uma piada aí? </h2>
                     <p>{setup} <em>{punchline}</em></p>
         </div>
         )
