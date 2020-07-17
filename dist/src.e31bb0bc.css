@@ -1,3 +1,8 @@
+.link {
+        display: inline-block;
+        margin: 10px;
+        margin-bottom: 30;
+}
 @font-face {
     font-family: RobotoCondensed;
     src: url(/roboto-condensed.light.6709adf4.ttf);
@@ -36,6 +41,12 @@ h1, h2, h3, h4, h5 {
     animation-name: fade-in;
     animation-duration: 2s;
 } 
+
+.link {
+        display: inline-block;
+        margin: 10px;
+        margin-bottom: 30;
+}
 
 @keyframes fade-out {
     from { opacity: 100 }

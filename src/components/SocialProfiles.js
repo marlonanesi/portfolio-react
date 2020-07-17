@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import SOCIAL_PROFILES from '../data/socialProfiles';
 
-// () => isso é uma arrow function: () =>
+// () => isso e uma arrow function: () =>
 // const define uma constante
 // Stateless Funcional Component
 const SocialProfile = props => {
@@ -17,7 +17,7 @@ const SocialProfile = props => {
 
 const SocialProfiles = () => (
     <div>
-        <h2>Minhas mídias sociais</h2>
+        <h2>Minhas m�dias sociais</h2>
         <div>
             {
                 SOCIAL_PROFILES.map(SOCIAL_PROFILE => {
