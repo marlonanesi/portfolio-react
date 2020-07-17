@@ -6,6 +6,7 @@ import Title from './Title';
 import Header from './Header'
 
 import profile from '../assets/profile.png';
+import Joke from './Jokes';
 
 class App extends Component {
     state = { counter: 0, displayBio: false };
@@ -24,10 +25,11 @@ class App extends Component {
                 {
                     this.state.displayBio ? (
                         <div>
-                           
+                            
                             <Title />
                             <p>Eu moro em Blumenau, sou Analista Desenvolvedor Python há 5 anos na empresa LINX S.A.</p>
                             <p>Este é o meu primeiro app fazendo parte do treinamento de react </p>
+                            <Joke />
                             <button onClick={this.toggleDisplayBio}>Ver menos</button>
                         </div>
                     ) : (
