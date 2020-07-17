@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Header from './Header'
 
 class Joke extends Component {
     state = { joke: {} };
@@ -12,15 +11,15 @@ class Joke extends Component {
     }
 
     render () {
-        const { setup, punchline } = this.state.joke;
+        const { setup, punchile } = this.state.joke;
 
         return (
-                <div>
-                    <Header />
-                    <h2>Vai uma piada aí? </h2>
-                    <p>{setup} <em>{punchline}</em></p>
-        </div>
-        )
+        <div>
+            <div>
+                <h2>Vai uma piada aí?</h2>
+                <p>{setup} <em> {punchile}</em></p>
+            </div>
+        </div>)
     }
 }
 

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import App from './components/App';
+import Header from './components/Header';
 import Joke from './components/Jokes';
 
 import './index.css';
@@ -10,11 +11,10 @@ import './index.css';
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route exact={true} path='/' component={App}></Route>
-      <Route path='/jokes' component={Joke}></Route>
+      <Route exact={true} path='/' render={() => <Header><App/></Header> }></Route>
+      <Route path='/jokes' render={() => <Header><Joke /></Header>}></Route>
     </Switch>
-  </BrowserRouter>
-  ,
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
@@ -23,17 +23,17 @@ ReactDOM.render(
 // resolve: será uma função que eu irei utilizar encadeando ométodo .then ao final da execução da minha promise;
 // reject: caso ocorrer algum problema na execução da minha promise, irei chamar essa função que encadeará o método
 // .catch da minha promise.
-new Promise((resolve, reject) => {
-  setTimeout(() => {
-    console.log('ho'),
-    reject();
-  }, 2000)
-}).then( () => {
-    console.log('ho 1');
-    console.log('ho 2');
-}).catch( () => {
-  console.log('Um erro aconteceu');
-});
+// new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     console.log('ho'),
+//     reject();
+//   }, 2000)
+// }).then( () => {
+//     console.log('ho 1');
+//     console.log('ho 2');
+// }).catch( () => {
+//   console.log('Um erro aconteceu');
+// });
 
 /* class Animal {
   constructor(nome) {
@@ -56,7 +56,7 @@ class Humano extends Animal {
     console.log("Oi!");
   }
   apresentar(){
-    console.log("Meno nome é", this.nome, "eu tenho", this.idade, "anos de idade", ",e o meu cabelo é", this.cabelo,".");
+    console.log("Meu nome é", this.nome, "eu tenho", this.idade, "anos de idade", ",e o meu cabelo é", this.cabelo,".");
   }
 }
 const h = new Humano("Marlon", "26", "Castanho")

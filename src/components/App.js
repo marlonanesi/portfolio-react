@@ -3,22 +3,19 @@
 import Projects from './Projects';
 import SocialProfiles from './SocialProfiles';
 import Title from './Title';
-import Header from './Header'
 
-import profile from '../assets/profile.png';
-import Joke from './Jokes';
+import profile from '../assets/profile.png'
 
 class App extends Component {
     state = { counter: 0, displayBio: false };
 
     toggleDisplayBio = () => {
-        this.setState({ displayBio: !this.state.displayBio });
+        this.setState({ displayBio: !this.state.displayBio })
     }
    
     render() {
         return (
              <div>
-                 <Header />
                  <img src={profile} alt='Profile image' className='profile' />
                 <h1>Meu Portfolio</h1>
                 <p>Olá, meu nome é Marlon!</p>
@@ -29,7 +26,6 @@ class App extends Component {
                             <Title />
                             <p>Eu moro em Blumenau, sou Analista Desenvolvedor Python há 5 anos na empresa LINX S.A.</p>
                             <p>Este é o meu primeiro app fazendo parte do treinamento de react </p>
-                            <Joke />
                             <button onClick={this.toggleDisplayBio}>Ver menos</button>
                         </div>
                     ) : (
