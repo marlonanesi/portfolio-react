@@ -23,7 +23,7 @@ class App extends Component {
                             <p>Olá, meu nome é Marlon!</p>
                             <Title />
                             <p>Eu moro em Blumenau, sou Analista Desenvolvedor Python há 5 anos na empresa LINX S.A.</p>
-                            <p>Este é o meu primeiro app fazendo parte do treinamento de react JS!</p>
+                            <p>Este é o meu primeiro app fazendo parte do treinamento de react </p>
                             <button onClick={this.toggleDisplayBio}>Ver menos</button>
                         </div>
                     ) : (
